@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client" />
+        <module name="zuul" />
+        <module name="entity" />
+        <module name="eureka" />
+        <module name="zipkin" />
+        <module name="feign" />
+        <module name="ribbon" />
+        <module name="configclient" />
+        <module name="config" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="" />
+      <module name="config" options="" />
+      <module name="configclient" options="" />
+      <module name="entity" options="" />
+      <module name="eureka" options="" />
+      <module name="feign" options="" />
+      <module name="ribbon" options="" />
+      <module name="zipkin" options="" />
+      <module name="zuul" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+#server:
+#  port: 8767
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#spring:
+#  application:
+#    name: config-server
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/NonAbsorbentMud/config   #配置git仓库地址
+#          search-paths:               #配置仓库路径
+#          # username: NonAbsorbentMud #访问git仓库的用户名 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
+#          # password: cfb1876391432 #访问git仓库的用户密码
+#          force-pull: true  #增加强制pull。发生原因：git判断本地数据和服务器不一致时，不进行更新
+#          # 指定拉取的配置文件的存放位置,配置文件最后存储的目录为 basedir + search-paths
+#          # 这个地方还需要注意的是，配置文件的仓库最好只放配置文件
+#          # 因为配置中心不仅会拉取search-paths下的文件，还会把uri指定仓库中的全部文件拉取到basedir下
+#          basedir: D:\git_server\config
+#      label: main   #配置仓库的分支
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#management:
+#  security:
+#    enabled: false
